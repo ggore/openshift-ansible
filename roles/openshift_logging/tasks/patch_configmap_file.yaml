@@ -51,3 +51,5 @@
   - copy:
       src: "{{ local_tmp.stdout }}/configmap_new_file"
       dest: "{{ configmap_new_file }}"
+    vars:
+      ansible_become: false
